@@ -110,46 +110,48 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
 
   if (data.variant === "experience") {
     return (
-      <div className="relative z-10 h-full flex flex-col justify-end">
-        {data.price && (
-          <motion.span
-            custom={0}
+      <div className="relative z-10 h-full flex flex-col justify-end" style={{ gap: 20 }}>
+        <div>
+          {data.price && (
+            <motion.span
+              custom={0}
+              variants={fadeUp}
+              initial="hidden"
+              animate={animState}
+              className="text-clay-light text-[11px] tracking-[0.4em] uppercase block mb-4 font-sans"
+            >
+              {data.price}
+            </motion.span>
+          )}
+          {!data.price && data.subtitle && (
+            <motion.span
+              custom={0}
+              variants={fadeUp}
+              initial="hidden"
+              animate={animState}
+              className="text-cream/50 text-[11px] tracking-[0.4em] uppercase block mb-4 font-sans"
+            >
+              {data.subtitle}
+            </motion.span>
+          )}
+          <motion.h2
+            custom={1}
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-clay-light text-[11px] tracking-[0.4em] uppercase mb-5 font-sans"
+            className="font-serif text-cream text-3xl sm:text-5xl font-normal leading-[1.15] max-w-lg"
+            style={{ textShadow: "0 2px 16px rgba(0,0,0,0.3)" }}
           >
-            {data.price}
-          </motion.span>
-        )}
-        {!data.price && data.subtitle && (
-          <motion.span
-            custom={0}
-            variants={fadeUp}
-            initial="hidden"
-            animate={animState}
-            className="text-cream/50 text-[11px] tracking-[0.4em] uppercase mb-5 font-sans"
-          >
-            {data.subtitle}
-          </motion.span>
-        )}
-        <motion.h2
-          custom={1}
-          variants={fadeUp}
-          initial="hidden"
-          animate={animState}
-          className="font-serif text-cream text-3xl sm:text-5xl font-normal leading-[1.15] max-w-lg"
-          style={{ textShadow: "0 2px 16px rgba(0,0,0,0.3)" }}
-        >
-          {data.headline}
-        </motion.h2>
+            {data.headline}
+          </motion.h2>
+        </div>
         {data.description && (
           <motion.p
             custom={2}
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/65 text-sm font-normal mt-8 max-w-md leading-relaxed"
+            className="text-cream/65 text-sm font-normal max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -160,7 +162,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="flex flex-wrap gap-3 mt-10"
+            className="flex flex-wrap gap-3"
           >
             {data.features.map((f) => (
               <li
@@ -178,7 +180,6 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="mt-12"
           >
             <Link href={data.cta.href} className="btn-primary">
               {data.cta.label}
