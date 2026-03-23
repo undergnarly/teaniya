@@ -29,7 +29,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
 
   if (data.variant === "hero") {
     return (
-      <div className="relative z-10 h-full flex flex-col justify-end pb-20 sm:pb-28 px-8 sm:px-16 lg:px-24">
+      <div className="relative z-10 h-full flex flex-col justify-end">
         <motion.p
           custom={0}
           variants={fadeUp}
@@ -110,7 +110,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
 
   if (data.variant === "experience") {
     return (
-      <div className="relative z-10 h-full flex flex-col justify-end pb-16 sm:pb-24 px-8 sm:px-16 lg:px-24">
+      <div className="relative z-10 h-full flex flex-col justify-end">
         {data.price && (
           <motion.span
             custom={0}
@@ -191,7 +191,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
 
   if (data.variant === "hook") {
     return (
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8 sm:px-16 lg:px-24">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center">
         {data.quote && (
           <motion.blockquote
             custom={0}
@@ -235,7 +235,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
   // Gallery variant
   if (data.variant === "gallery") {
     return (
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8 sm:px-16 lg:px-24">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center">
         <motion.h2
           custom={0}
           variants={fadeUp}
@@ -276,7 +276,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
   // Footer variant
   if (data.variant === "footer") {
     return (
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-8 sm:px-16 lg:px-24">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center">
         <motion.div
           custom={0}
           variants={fadeUp}
@@ -331,7 +331,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
 
   // Feature variant
   return (
-    <div className="relative z-10 h-full flex flex-col justify-center px-8 sm:px-16 lg:px-24">
+    <div className="relative z-10 h-full flex flex-col justify-center">
       <motion.span
         custom={0}
         variants={fadeUp}
