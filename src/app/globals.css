@@ -70,15 +70,6 @@ body {
   overflow: hidden;
 }
 
-.slide-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 8px solid var(--color-cream);
-  border-radius: 28px;
-  pointer-events: none;
-  z-index: 20;
-}
 
 /* ── Video background ── */
 .video-bg {
@@ -276,14 +267,6 @@ body {
   min-height: 100dvh;
 }
 
-/* ── App frame for desktop ── */
-@media (min-width: 1024px) {
-  .app-frame {
-    max-width: calc(100dvh * 9 / 16);
-    margin: 0 auto;
-    position: relative;
-  }
-}
 
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
