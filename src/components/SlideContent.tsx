@@ -117,7 +117,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-clay-light text-[11px] tracking-[0.4em] uppercase mb-3 font-sans"
+            className="text-clay-light text-[11px] tracking-[0.4em] uppercase mb-5 font-sans"
           >
             {data.price}
           </motion.span>
@@ -128,7 +128,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/50 text-[11px] tracking-[0.4em] uppercase mb-3 font-sans"
+            className="text-cream/50 text-[11px] tracking-[0.4em] uppercase mb-5 font-sans"
           >
             {data.subtitle}
           </motion.span>
@@ -149,7 +149,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/65 text-sm font-normal mt-6 max-w-md leading-relaxed"
+            className="text-cream/65 text-sm font-normal mt-8 max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -160,7 +160,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="flex flex-wrap gap-3 mt-7"
+            className="flex flex-wrap gap-3 mt-10"
           >
             {data.features.map((f) => (
               <li
@@ -178,7 +178,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="mt-14"
+            className="mt-12"
           >
             <Link href={data.cta.href} className="btn-primary">
               {data.cta.label}
