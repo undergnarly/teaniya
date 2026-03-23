@@ -65,7 +65,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="flex gap-4 mt-8 flex-wrap"
+          className="flex gap-4 mt-14 flex-wrap"
         >
           {data.cta && (
             <Link href={data.cta.href} className="btn-primary">
@@ -149,7 +149,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/65 text-sm font-normal mt-4 max-w-md leading-relaxed"
+            className="text-cream/65 text-sm font-normal mt-6 max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -160,7 +160,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="flex flex-wrap gap-3 mt-5"
+            className="flex flex-wrap gap-3 mt-7"
           >
             {data.features.map((f) => (
               <li
@@ -178,7 +178,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="mt-7"
+            className="mt-14"
           >
             <Link href={data.cta.href} className="btn-primary">
               {data.cta.label}
@@ -367,7 +367,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="mt-7"
+          className="mt-14"
         >
           <Link href={data.cta.href} className="btn-primary">
             {data.cta.label}
