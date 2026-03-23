@@ -17,12 +17,12 @@ export default function ContactPage() {
           style={{ backgroundImage: "url(/images/contact-hero.jpg)" }}
         />
         <div className="absolute inset-0 overlay-forest" />
-        <div className="relative z-10 px-6 sm:px-12 pb-16 sm:pb-24">
+        <div className="relative z-10 px-8 sm:px-16 lg:px-24 pb-16 sm:pb-24">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-light leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
           >
             Get in Touch
           </motion.h1>
@@ -30,7 +30,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/60 text-sm font-light mt-5 max-w-md"
+            className="text-cream/60 text-sm font-normal mt-5 max-w-md"
           >
             We&apos;d love to hear from you. Whether it&apos;s a question, a booking, or just to say hello over tea.
           </motion.p>
@@ -38,13 +38,13 @@ export default function ContactPage() {
       </section>
 
       {/* Contact grid */}
-      <section className="py-24 px-6 sm:px-12">
+      <section className="py-24 px-8 sm:px-16 lg:px-24">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Form */}
             <SectionReveal>
               <div>
-                <h2 className="font-serif text-charcoal text-2xl font-light mb-8">
+                <h2 className="font-serif text-charcoal text-2xl font-normal mb-8">
                   Send us a message
                 </h2>
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>

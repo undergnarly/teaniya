@@ -93,7 +93,7 @@ export default function SchoolPage() {
           style={{ backgroundImage: "url(/images/school-hero.jpg)" }}
         />
         <div className="absolute inset-0 overlay-dark" />
-        <div className="relative z-10 px-6 sm:px-12 pb-16 sm:pb-24 max-w-3xl">
+        <div className="relative z-10 px-8 sm:px-16 lg:px-24 pb-16 sm:pb-24 max-w-3xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ export default function SchoolPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-light leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
           >
             Tea School
           </motion.h1>
@@ -114,7 +114,7 @@ export default function SchoolPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/65 text-base font-light mt-5 max-w-lg leading-relaxed"
+            className="text-cream/65 text-base font-normal mt-5 max-w-lg leading-relaxed"
           >
             From your first cup to mastery. Our courses are designed for anyone who believes tea deserves more than a teabag and boiling water.
           </motion.p>
@@ -122,13 +122,13 @@ export default function SchoolPage() {
       </section>
 
       {/* Why learn */}
-      <section className="py-24 px-6 sm:px-12">
+      <section className="py-24 px-8 sm:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           <SectionReveal>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-light mb-8">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal mb-8">
               Why study tea?
             </h2>
-            <p className="text-charcoal-light text-sm font-light leading-relaxed max-w-2xl mx-auto">
+            <p className="text-charcoal-light text-sm font-normal leading-relaxed max-w-2xl mx-auto">
               Tea is one of humanity&apos;s oldest crafts — a practice that weaves together botany, chemistry, history, and philosophy. Learning tea is learning patience. It sharpens your senses, connects you to the natural world, and teaches you that the simplest things often hold the greatest depth.
             </p>
           </SectionReveal>
@@ -137,12 +137,12 @@ export default function SchoolPage() {
 
       {/* Courses */}
       <section className="py-24 bg-forest text-cream">
-        <div className="max-w-6xl mx-auto px-6 sm:px-12">
+        <div className="max-w-6xl mx-auto px-8 sm:px-16 lg:px-24">
           <SectionReveal>
             <p className="text-cream/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               Courses
             </p>
-            <h2 className="font-serif text-3xl sm:text-5xl font-light text-center mb-16">
+            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-center mb-16">
               Find your path
             </h2>
           </SectionReveal>
@@ -159,7 +159,7 @@ export default function SchoolPage() {
                     <div className="p-8 lg:col-span-2">
                       <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                         <div>
-                          <h3 className="font-serif text-xl font-light">
+                          <h3 className="font-serif text-xl font-normal">
                             {course.name}
                           </h3>
                           <div className="flex items-center gap-3 mt-2">
@@ -177,7 +177,7 @@ export default function SchoolPage() {
                           {course.price}
                         </span>
                       </div>
-                      <p className="text-cream/55 text-sm font-light leading-relaxed my-4">
+                      <p className="text-cream/55 text-sm font-normal leading-relaxed my-4">
                         {course.description}
                       </p>
                       <p className="text-cream/35 text-[11px] tracking-[0.1em] uppercase mb-5">
@@ -196,16 +196,16 @@ export default function SchoolPage() {
       </section>
 
       {/* Private */}
-      <section className="py-24 px-6 sm:px-12">
+      <section className="py-24 px-8 sm:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           <SectionReveal>
             <p className="text-charcoal/40 text-[11px] tracking-[0.4em] uppercase mb-4">
               Custom Learning
             </p>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-light mb-6">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal mb-6">
               Private Tuition
             </h2>
-            <p className="text-charcoal-light text-sm font-light leading-relaxed max-w-xl mx-auto mb-8">
+            <p className="text-charcoal-light text-sm font-normal leading-relaxed max-w-xl mx-auto mb-8">
               Want something tailored? Our tea masters offer one-on-one sessions designed around your interests, level, and goals. Perfect for enthusiasts, professionals, or small groups.
             </p>
             <a href="/contact" className="btn-primary">

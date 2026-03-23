@@ -36,7 +36,7 @@ export default function Header({ variant = "light" }: HeaderProps) {
         <Link href="/" className={`${logoColor} no-underline`}>
           <div className="flex flex-col items-start">
             <span
-              className="font-serif text-2xl sm:text-3xl font-light tracking-[0.15em]"
+              className="font-serif text-2xl sm:text-3xl font-normal tracking-[0.15em]"
               style={{ lineHeight: 1 }}
             >
               TEANIYA

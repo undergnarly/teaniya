@@ -41,14 +41,12 @@ export const homeSlides: SlideData[] = [
     subtitle: "Immersive Experience",
     description:
       "Step into stillness. Our guided ceremonies honor the Gongfu tradition — a meditative journey through aroma, taste, and presence.",
-    price: "From IDR 450,000",
     media: {
       poster: "/images/ceremony-poster.jpg",
-      video: "/videos/ceremony.mp4",
     },
     features: ["Gongfu Cha", "Matcha", "Private", "Group"],
     cta: { label: "Book a Ceremony", href: "/ceremony" },
-    overlayStyle: "warm",
+    overlayStyle: "dark",
   },
   {
     id: "teas",
@@ -76,33 +74,35 @@ export const homeSlides: SlideData[] = [
     },
     features: ["Yixing Clay", "Porcelain", "Raku", "Bamboo"],
     cta: { label: "Browse Teaware", href: "/teaware" },
-    overlayStyle: "forest",
+    overlayStyle: "dark",
   },
   {
     id: "school",
-    variant: "feature",
+    variant: "experience",
     headline: "Tea School",
     subtitle: "Learn the Way of Tea",
     description:
       "From beginner workshops to advanced tea master courses. Learn brewing techniques, tea tasting, and the philosophy of tea.",
     media: {
       poster: "/images/school-poster.jpg",
-      video: "/videos/school.mp4",
     },
+    features: ["Workshops", "Courses", "Certification"],
     cta: { label: "View Courses", href: "/school" },
     overlayStyle: "dark",
   },
   {
     id: "journal-cta",
-    variant: "gallery",
+    variant: "experience",
     headline: "Stories Behind the Leaf",
+    subtitle: "The Journal",
     description:
       "Explore our journal — tales of tea origins, brewing rituals, and the quiet wisdom found in every cup.",
     media: {
       poster: "/images/journal-poster.jpg",
     },
+    features: ["Culture", "Brewing", "History", "Travel"],
     cta: { label: "Read Journal", href: "/journal" },
-    overlayStyle: "warm",
+    overlayStyle: "dark",
   },
   {
     id: "footer",

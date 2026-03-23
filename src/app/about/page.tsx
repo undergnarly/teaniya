@@ -85,7 +85,7 @@ export default function AboutPage() {
           }}
         />
         <div className="absolute inset-0 overlay-dark" />
-        <div className="relative z-10 px-6 sm:px-12 pb-16 sm:pb-24 max-w-4xl">
+        <div className="relative z-10 px-8 sm:px-16 lg:px-24 pb-16 sm:pb-24 max-w-4xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-light leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
           >
             Born from a love of tea,
             <br />
@@ -108,12 +108,12 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="py-24 sm:py-32 px-6 sm:px-12">
+      <section className="py-24 sm:py-32 px-8 sm:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto">
           <SectionReveal>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div>
-                <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-light leading-[1.2] mb-8">
+                <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal leading-[1.2] mb-8">
                   Where ancient wisdom meets island serenity
                 </h2>
               </div>
@@ -135,12 +135,12 @@ export default function AboutPage() {
 
       {/* Values */}
       <section className="py-24 bg-forest text-cream">
-        <div className="max-w-6xl mx-auto px-6 sm:px-12">
+        <div className="max-w-6xl mx-auto px-8 sm:px-16 lg:px-24">
           <SectionReveal>
             <p className="text-cream/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               Our Philosophy
             </p>
-            <h2 className="font-serif text-3xl sm:text-5xl font-light text-center mb-20">
+            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-center mb-20">
               What guides us
             </h2>
           </SectionReveal>
@@ -152,10 +152,10 @@ export default function AboutPage() {
                   <div className="flex justify-center mb-6 text-cream/60">
                     {value.icon}
                   </div>
-                  <h3 className="font-serif text-xl font-light tracking-[0.05em] mb-3">
+                  <h3 className="font-serif text-xl font-normal tracking-[0.05em] mb-3">
                     {value.title}
                   </h3>
-                  <p className="text-cream/50 text-sm font-light leading-relaxed">
+                  <p className="text-cream/50 text-sm font-normal leading-relaxed">
                     {value.desc}
                   </p>
                 </div>
@@ -166,13 +166,13 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-24 sm:py-32 px-6 sm:px-12">
+      <section className="py-24 sm:py-32 px-8 sm:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <SectionReveal>
             <p className="text-charcoal/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               The People
             </p>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-5xl font-light text-center mb-20">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-5xl font-normal text-center mb-20">
               Meet our tea family
             </h2>
           </SectionReveal>
@@ -187,13 +187,13 @@ export default function AboutPage() {
                       style={{ backgroundImage: `url(${member.image})` }}
                     />
                   </div>
-                  <h3 className="font-serif text-xl font-light text-charcoal">
+                  <h3 className="font-serif text-xl font-normal text-charcoal">
                     {member.name}
                   </h3>
                   <p className="text-sage text-[11px] tracking-[0.2em] uppercase mt-1">
                     {member.role}
                   </p>
-                  <p className="text-charcoal-light text-sm font-light mt-3 leading-relaxed">
+                  <p className="text-charcoal-light text-sm font-normal mt-3 leading-relaxed">
                     {member.bio}
                   </p>
                 </div>
@@ -207,10 +207,10 @@ export default function AboutPage() {
       <section className="py-24 bg-sand/50">
         <div className="max-w-2xl mx-auto text-center px-6">
           <SectionReveal>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-light mb-6">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal mb-6">
               Come sit with us
             </h2>
-            <p className="text-charcoal-light text-sm font-light mb-8 max-w-md mx-auto leading-relaxed">
+            <p className="text-charcoal-light text-sm font-normal mb-8 max-w-md mx-auto leading-relaxed">
               Whether you are a seasoned tea drinker or simply curious, our doors are always open. Let us pour you a cup.
             </p>
             <a href="/contact" className="btn-primary">

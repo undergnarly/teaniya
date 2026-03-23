@@ -92,7 +92,7 @@ export default function CeremonyPage() {
           style={{ backgroundImage: "url(/images/ceremony-hero.jpg)" }}
         />
         <div className="absolute inset-0 overlay-warm" />
-        <div className="relative z-10 px-6 sm:px-12 pb-16 sm:pb-24 max-w-3xl">
+        <div className="relative z-10 px-8 sm:px-16 lg:px-24 pb-16 sm:pb-24 max-w-3xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -105,7 +105,7 @@ export default function CeremonyPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-light leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
           >
             Tea Ceremony
           </motion.h1>
@@ -113,7 +113,7 @@ export default function CeremonyPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/65 text-base font-light mt-5 max-w-lg leading-relaxed"
+            className="text-cream/65 text-base font-normal mt-5 max-w-lg leading-relaxed"
           >
             More than drinking tea — a doorway into stillness. Each ceremony is a practice in attention, patience, and the beauty of simplicity.
           </motion.p>
@@ -121,13 +121,13 @@ export default function CeremonyPage() {
       </section>
 
       {/* Process */}
-      <section className="py-24 px-6 sm:px-12">
+      <section className="py-24 px-8 sm:px-16 lg:px-24">
         <div className="max-w-5xl mx-auto">
           <SectionReveal>
             <p className="text-charcoal/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               The Journey
             </p>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-light text-center mb-20">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal text-center mb-20">
               How a ceremony unfolds
             </h2>
           </SectionReveal>
@@ -142,7 +142,7 @@ export default function CeremonyPage() {
                   <h3 className="font-serif text-charcoal text-xl font-light mt-3 mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-charcoal-light text-sm font-light leading-relaxed">
+                  <p className="text-charcoal-light text-sm font-normal leading-relaxed">
                     {step.desc}
                   </p>
                 </div>
@@ -154,12 +154,12 @@ export default function CeremonyPage() {
 
       {/* Ceremony options */}
       <section className="py-24 bg-forest text-cream">
-        <div className="max-w-6xl mx-auto px-6 sm:px-12">
+        <div className="max-w-6xl mx-auto px-8 sm:px-16 lg:px-24">
           <SectionReveal>
             <p className="text-cream/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               Choose Your Path
             </p>
-            <h2 className="font-serif text-3xl sm:text-5xl font-light text-center mb-16">
+            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-center mb-16">
               Ceremony Experiences
             </h2>
           </SectionReveal>
@@ -174,7 +174,7 @@ export default function CeremonyPage() {
                   />
                   <div className="p-8">
                     <div className="flex justify-between items-start mb-3">
-                      <h3 className="font-serif text-xl font-light">
+                      <h3 className="font-serif text-xl font-normal">
                         {c.name}
                       </h3>
                       <span className="text-clay-light text-sm whitespace-nowrap ml-4">
@@ -184,7 +184,7 @@ export default function CeremonyPage() {
                     <p className="text-cream/40 text-[11px] tracking-[0.2em] uppercase mb-4">
                       {c.duration}
                     </p>
-                    <p className="text-cream/60 text-sm font-light leading-relaxed mb-5">
+                    <p className="text-cream/60 text-sm font-normal leading-relaxed mb-5">
                       {c.description}
                     </p>
                     <div className="border-t border-cream/10 pt-5">
@@ -195,7 +195,7 @@ export default function CeremonyPage() {
                         {c.includes.map((item) => (
                           <li
                             key={item}
-                            className="text-cream/50 text-sm font-light flex items-start gap-2"
+                            className="text-cream/50 text-sm font-normal flex items-start gap-2"
                           >
                             <span className="text-sage-light mt-1 text-xs">•</span>
                             {item}
@@ -215,12 +215,12 @@ export default function CeremonyPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 text-center">
+      <section className="py-20 px-8 sm:px-16 lg:px-24 text-center">
         <SectionReveal>
           <h2 className="font-serif text-charcoal text-3xl font-light mb-4">
             Questions about ceremonies?
           </h2>
-          <p className="text-charcoal-light text-sm font-light mb-8 max-w-md mx-auto">
+          <p className="text-charcoal-light text-sm font-normal mb-8 max-w-md mx-auto">
             We&apos;re happy to help you choose the right experience. Reach out anytime.
           </p>
           <a href="/contact" className="btn-primary">

@@ -149,7 +149,7 @@ export default function TeasPage() {
           style={{ backgroundImage: "url(/images/teas-hero.jpg)" }}
         />
         <div className="absolute inset-0 overlay-dark" />
-        <div className="relative z-10 px-6 sm:px-12 pb-16 sm:pb-24">
+        <div className="relative z-10 px-8 sm:px-16 lg:px-24 pb-16 sm:pb-24">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -162,7 +162,7 @@ export default function TeasPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-light leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
           >
             Curated Teas
           </motion.h1>
@@ -170,7 +170,7 @@ export default function TeasPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/60 text-sm font-light mt-5 max-w-md leading-relaxed"
+            className="text-cream/60 text-sm font-normal mt-5 max-w-md leading-relaxed"
           >
             Hand-selected from the world&apos;s finest gardens. Each tea is chosen for its character, origin story, and the craft behind its making.
           </motion.p>
@@ -178,7 +178,7 @@ export default function TeasPage() {
       </section>
 
       {/* Filter + Grid */}
-      <section className="py-16 sm:py-24 px-6 sm:px-12">
+      <section className="py-16 sm:py-24 px-8 sm:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto">
           {/* Category filter */}
           <SectionReveal>
@@ -227,14 +227,14 @@ export default function TeasPage() {
                         <h3 className="font-serif text-charcoal text-xl font-light">
                           {tea.name}
                         </h3>
-                        <span className="text-bark text-sm font-light whitespace-nowrap ml-4">
+                        <span className="text-bark text-sm font-normal whitespace-nowrap ml-4">
                           {tea.price}
                         </span>
                       </div>
                       <p className="text-sage text-[11px] tracking-[0.15em] uppercase mb-3">
                         {tea.origin} · {tea.weight}
                       </p>
-                      <p className="text-charcoal-light text-sm font-light leading-relaxed mb-4">
+                      <p className="text-charcoal-light text-sm font-normal leading-relaxed mb-4">
                         {tea.description}
                       </p>
                       {tea.tags && (
@@ -261,10 +261,10 @@ export default function TeasPage() {
       {/* CTA */}
       <section className="py-20 bg-forest text-cream text-center">
         <SectionReveal>
-          <h2 className="font-serif text-3xl sm:text-4xl font-light mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl font-normal mb-4">
             Can&apos;t decide?
           </h2>
-          <p className="text-cream/50 text-sm font-light mb-8 max-w-md mx-auto">
+          <p className="text-cream/50 text-sm font-normal mb-8 max-w-md mx-auto">
             Visit us for a guided tasting. Our tea masters will help you find your perfect cup.
           </p>
           <a href="/ceremony" className="btn-outline">
