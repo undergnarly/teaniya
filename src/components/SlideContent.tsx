@@ -29,33 +29,35 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
 
   if (data.variant === "hero") {
     return (
-      <div className="relative z-10 h-full flex flex-col justify-end">
-        <motion.p
-          custom={0}
-          variants={fadeUp}
-          initial="hidden"
-          animate={animState}
-          className="text-cream/50 text-[11px] tracking-[0.4em] uppercase mb-4 font-sans"
-        >
-          {data.subtitle}
-        </motion.p>
-        <motion.h1
-          custom={1}
-          variants={fadeUp}
-          initial="hidden"
-          animate={animState}
-          className="font-serif text-cream text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.1] max-w-xl"
-          style={{ textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}
-        >
-          {data.headline}
-        </motion.h1>
+      <div className="relative z-10 h-full flex flex-col justify-end" style={{ gap: 20 }}>
+        <div>
+          <motion.p
+            custom={0}
+            variants={fadeUp}
+            initial="hidden"
+            animate={animState}
+            className="text-cream/50 text-[11px] tracking-[0.4em] uppercase mb-4 font-sans"
+          >
+            {data.subtitle}
+          </motion.p>
+          <motion.h1
+            custom={1}
+            variants={fadeUp}
+            initial="hidden"
+            animate={animState}
+            className="font-serif text-cream text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.1] max-w-xl"
+            style={{ textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}
+          >
+            {data.headline}
+          </motion.h1>
+        </div>
         {data.description && (
           <motion.p
             custom={2}
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/70 text-sm sm:text-base font-medium mt-5 max-w-md leading-relaxed"
+            className="text-cream/70 text-sm sm:text-base font-medium max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -65,7 +67,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="flex gap-4 mt-14 flex-wrap"
+          className="flex gap-4 flex-wrap"
         >
           {data.cta && (
             <Link href={data.cta.href} className="btn-primary">
