@@ -98,7 +98,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-semibold leading-[1.1]"
           >
             Born from a love of tea,
             <br />
@@ -113,7 +113,7 @@ export default function AboutPage() {
           <SectionReveal>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div>
-                <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal leading-[1.2] mb-8">
+                <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-semibold leading-[1.2] mb-8">
                   Where ancient wisdom meets island serenity
                 </h2>
               </div>
@@ -140,7 +140,7 @@ export default function AboutPage() {
             <p className="text-cream/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               Our Philosophy
             </p>
-            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-center mb-20">
+            <h2 className="font-serif text-3xl sm:text-5xl font-semibold text-center mb-20">
               What guides us
             </h2>
           </SectionReveal>
@@ -152,10 +152,10 @@ export default function AboutPage() {
                   <div className="flex justify-center mb-6 text-cream/60">
                     {value.icon}
                   </div>
-                  <h3 className="font-serif text-xl font-normal tracking-[0.05em] mb-3">
+                  <h3 className="font-serif text-xl font-medium tracking-[0.05em] mb-3">
                     {value.title}
                   </h3>
-                  <p className="text-cream/50 text-sm font-normal leading-relaxed">
+                  <p className="text-cream/50 text-sm font-medium leading-relaxed">
                     {value.desc}
                   </p>
                 </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
             <p className="text-charcoal/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               The People
             </p>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-5xl font-normal text-center mb-20">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-5xl font-semibold text-center mb-20">
               Meet our tea family
             </h2>
           </SectionReveal>
@@ -187,13 +187,13 @@ export default function AboutPage() {
                       style={{ backgroundImage: `url(${member.image})` }}
                     />
                   </div>
-                  <h3 className="font-serif text-xl font-normal text-charcoal">
+                  <h3 className="font-serif text-xl font-medium text-charcoal">
                     {member.name}
                   </h3>
                   <p className="text-sage text-[11px] tracking-[0.2em] uppercase mt-1">
                     {member.role}
                   </p>
-                  <p className="text-charcoal-light text-sm font-normal mt-3 leading-relaxed">
+                  <p className="text-charcoal-light text-sm font-medium mt-3 leading-relaxed">
                     {member.bio}
                   </p>
                 </div>
@@ -207,10 +207,10 @@ export default function AboutPage() {
       <section className="py-24 bg-sand/50">
         <div className="max-w-2xl mx-auto text-center px-6">
           <SectionReveal>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal mb-6">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-semibold mb-6">
               Come sit with us
             </h2>
-            <p className="text-charcoal-light text-sm font-normal mb-8 max-w-md mx-auto leading-relaxed">
+            <p className="text-charcoal-light text-sm font-medium mb-8 max-w-md mx-auto leading-relaxed">
               Whether you are a seasoned tea drinker or simply curious, our doors are always open. Let us pour you a cup.
             </p>
             <a href="/contact" className="btn-primary">

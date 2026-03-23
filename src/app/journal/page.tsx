@@ -138,7 +138,7 @@ export default function JournalPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-semibold leading-[1.1]"
           >
             The Journal
           </motion.h1>
@@ -146,7 +146,7 @@ export default function JournalPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/60 text-sm font-normal mt-5 max-w-md leading-relaxed"
+            className="text-cream/60 text-sm font-medium mt-5 max-w-md leading-relaxed"
           >
             Explorations in tea culture, brewing wisdom, origin stories, and the quiet philosophy of the leaf.
           </motion.p>
@@ -170,10 +170,10 @@ export default function JournalPage() {
                 >
                   {categoryLabels[entries[0].category]}
                 </span>
-                <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal mt-4 mb-4 leading-[1.2]">
+                <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-semibold mt-4 mb-4 leading-[1.2]">
                   {entries[0].title}
                 </h2>
-                <p className="text-charcoal-light text-sm font-normal leading-relaxed mb-4">
+                <p className="text-charcoal-light text-sm font-medium leading-relaxed mb-4">
                   {entries[0].excerpt}
                 </p>
                 <div className="flex items-center gap-4 text-charcoal/40 text-[11px] tracking-[0.1em] uppercase">
@@ -208,7 +208,7 @@ export default function JournalPage() {
                   <h3 className="font-serif text-charcoal text-xl font-light mt-3 mb-2 group-hover:text-forest transition-colors">
                     {entry.title}
                   </h3>
-                  <p className="text-charcoal-light text-sm font-normal leading-relaxed mb-3">
+                  <p className="text-charcoal-light text-sm font-medium leading-relaxed mb-3">
                     {entry.excerpt}
                   </p>
                   <div className="flex items-center gap-3 text-charcoal/35 text-[10px] tracking-[0.1em] uppercase">
@@ -226,10 +226,10 @@ export default function JournalPage() {
       {/* Newsletter */}
       <section className="py-20 bg-forest text-cream text-center">
         <SectionReveal>
-          <h2 className="font-serif text-3xl sm:text-4xl font-normal mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold mb-4">
             Stay with us
           </h2>
-          <p className="text-cream/50 text-sm font-normal mb-8 max-w-md mx-auto">
+          <p className="text-cream/50 text-sm font-medium mb-8 max-w-md mx-auto">
             New stories, brewing tips, and tea discoveries delivered to your inbox. No spam — just leaves and words.
           </p>
           <div className="flex gap-0 max-w-sm mx-auto">

@@ -31,7 +31,7 @@ export default function Footer() {
             <p className="text-cream/40 text-[10px] tracking-[0.3em] uppercase mt-1">
               Tea House · Bali
             </p>
-            <p className="text-cream/50 text-sm font-normal mt-4 leading-relaxed max-w-xs">
+            <p className="text-cream/50 text-sm font-medium mt-4 leading-relaxed max-w-xs">
               A sanctuary for tea lovers in the heart of Bali. Discover rare teas, artisan teaware, and the ancient art of tea ceremony.
             </p>
           </motion.div>
@@ -77,7 +77,7 @@ export default function Footer() {
             <h4 className="text-[11px] tracking-[0.3em] uppercase text-cream/40 mb-5">
               Visit Us
             </h4>
-            <div className="text-cream/60 text-sm font-normal space-y-3">
+            <div className="text-cream/60 text-sm font-medium space-y-3">
               <p>Jl. Raya Ubud No. 88<br />Ubud, Bali 80571</p>
               <p>Open Daily<br />9:00 — 21:00</p>
               <p>

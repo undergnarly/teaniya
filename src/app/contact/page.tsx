@@ -22,7 +22,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-semibold leading-[1.1]"
           >
             Get in Touch
           </motion.h1>
@@ -30,7 +30,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/60 text-sm font-normal mt-5 max-w-md"
+            className="text-cream/60 text-sm font-medium mt-5 max-w-md"
           >
             We&apos;d love to hear from you. Whether it&apos;s a question, a booking, or just to say hello over tea.
           </motion.p>
@@ -44,7 +44,7 @@ export default function ContactPage() {
             {/* Form */}
             <SectionReveal>
               <div>
-                <h2 className="font-serif text-charcoal text-2xl font-normal mb-8">
+                <h2 className="font-serif text-charcoal text-2xl font-medium mb-8">
                   Send us a message
                 </h2>
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>

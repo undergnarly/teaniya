@@ -105,7 +105,7 @@ export default function CeremonyPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-semibold leading-[1.1]"
           >
             Tea Ceremony
           </motion.h1>
@@ -113,7 +113,7 @@ export default function CeremonyPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/65 text-base font-normal mt-5 max-w-lg leading-relaxed"
+            className="text-cream/65 text-base font-medium mt-5 max-w-lg leading-relaxed"
           >
             More than drinking tea — a doorway into stillness. Each ceremony is a practice in attention, patience, and the beauty of simplicity.
           </motion.p>
@@ -127,7 +127,7 @@ export default function CeremonyPage() {
             <p className="text-charcoal/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               The Journey
             </p>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal text-center mb-20">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-semibold text-center mb-20">
               How a ceremony unfolds
             </h2>
           </SectionReveal>
@@ -142,7 +142,7 @@ export default function CeremonyPage() {
                   <h3 className="font-serif text-charcoal text-xl font-light mt-3 mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-charcoal-light text-sm font-normal leading-relaxed">
+                  <p className="text-charcoal-light text-sm font-medium leading-relaxed">
                     {step.desc}
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function CeremonyPage() {
             <p className="text-cream/40 text-[11px] tracking-[0.4em] uppercase mb-4 text-center">
               Choose Your Path
             </p>
-            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-center mb-16">
+            <h2 className="font-serif text-3xl sm:text-5xl font-semibold text-center mb-16">
               Ceremony Experiences
             </h2>
           </SectionReveal>
@@ -174,7 +174,7 @@ export default function CeremonyPage() {
                   />
                   <div className="p-8">
                     <div className="flex justify-between items-start mb-3">
-                      <h3 className="font-serif text-xl font-normal">
+                      <h3 className="font-serif text-xl font-medium">
                         {c.name}
                       </h3>
                       <span className="text-clay-light text-sm whitespace-nowrap ml-4">
@@ -184,7 +184,7 @@ export default function CeremonyPage() {
                     <p className="text-cream/40 text-[11px] tracking-[0.2em] uppercase mb-4">
                       {c.duration}
                     </p>
-                    <p className="text-cream/60 text-sm font-normal leading-relaxed mb-5">
+                    <p className="text-cream/60 text-sm font-medium leading-relaxed mb-5">
                       {c.description}
                     </p>
                     <div className="border-t border-cream/10 pt-5">
@@ -195,7 +195,7 @@ export default function CeremonyPage() {
                         {c.includes.map((item) => (
                           <li
                             key={item}
-                            className="text-cream/50 text-sm font-normal flex items-start gap-2"
+                            className="text-cream/50 text-sm font-medium flex items-start gap-2"
                           >
                             <span className="text-sage-light mt-1 text-xs">•</span>
                             {item}
@@ -220,7 +220,7 @@ export default function CeremonyPage() {
           <h2 className="font-serif text-charcoal text-3xl font-light mb-4">
             Questions about ceremonies?
           </h2>
-          <p className="text-charcoal-light text-sm font-normal mb-8 max-w-md mx-auto">
+          <p className="text-charcoal-light text-sm font-medium mb-8 max-w-md mx-auto">
             We&apos;re happy to help you choose the right experience. Reach out anytime.
           </p>
           <a href="/contact" className="btn-primary">

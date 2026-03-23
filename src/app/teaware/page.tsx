@@ -123,7 +123,7 @@ export default function TeawarePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-serif text-cream text-4xl sm:text-6xl font-normal leading-[1.1]"
+            className="font-serif text-cream text-4xl sm:text-6xl font-semibold leading-[1.1]"
           >
             Artisan Teaware
           </motion.h1>
@@ -131,7 +131,7 @@ export default function TeawarePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-cream/60 text-sm font-normal mt-5 max-w-md leading-relaxed"
+            className="text-cream/60 text-sm font-medium mt-5 max-w-md leading-relaxed"
           >
             Vessels shaped by master hands. Each piece is a conversation between earth, fire, and the tea it will hold.
           </motion.p>
@@ -188,7 +188,7 @@ export default function TeawarePage() {
                       <p className="text-sage text-[11px] tracking-[0.15em] uppercase mt-1">
                         {item.artisan}
                       </p>
-                      <p className="text-charcoal-light text-sm font-normal leading-relaxed mt-3">
+                      <p className="text-charcoal-light text-sm font-medium leading-relaxed mt-3">
                         {item.description}
                       </p>
                       <p className="text-bark font-light mt-3">
@@ -210,10 +210,10 @@ export default function TeawarePage() {
             <p className="text-charcoal/40 text-[11px] tracking-[0.4em] uppercase mb-4">
               The Makers
             </p>
-            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-normal mb-6">
+            <h2 className="font-serif text-charcoal text-3xl sm:text-4xl font-semibold mb-6">
               Every piece has a story
             </h2>
-            <p className="text-charcoal-light text-sm font-normal leading-relaxed max-w-2xl mx-auto mb-8">
+            <p className="text-charcoal-light text-sm font-medium leading-relaxed max-w-2xl mx-auto mb-8">
               We work directly with artisans across Asia — from Yixing clay masters to Balinese ceramicists. Each vessel is chosen not just for beauty, but for how it transforms the tea experience.
             </p>
             <a href="/about" className="btn-primary">

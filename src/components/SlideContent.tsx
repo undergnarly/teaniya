@@ -44,7 +44,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="font-serif text-cream text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.1] max-w-xl"
+          className="font-serif text-cream text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.1] max-w-xl"
           style={{ textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}
         >
           {data.headline}
@@ -55,7 +55,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/70 text-sm sm:text-base font-normal mt-5 max-w-md leading-relaxed"
+            className="text-cream/70 text-sm sm:text-base font-medium mt-5 max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -139,7 +139,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="font-serif text-cream text-3xl sm:text-5xl font-normal leading-[1.15] max-w-lg"
+            className="font-serif text-cream text-3xl sm:text-5xl font-semibold leading-[1.15] max-w-lg"
             style={{ textShadow: "0 2px 16px rgba(0,0,0,0.3)" }}
           >
             {data.headline}
@@ -151,7 +151,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/65 text-sm font-normal max-w-md leading-relaxed"
+            className="text-cream/65 text-sm font-medium max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -201,7 +201,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             animate={animState}
             className="max-w-2xl"
           >
-            <p className="font-serif text-cream text-2xl sm:text-4xl lg:text-5xl font-normal leading-[1.3] italic">
+            <p className="font-serif text-cream text-2xl sm:text-4xl lg:text-5xl font-semibold leading-[1.3] italic">
               &ldquo;{data.quote.text}&rdquo;
             </p>
             <footer className="mt-6 text-cream/50 text-[12px] tracking-[0.2em] uppercase">
@@ -219,7 +219,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           >
             {data.stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="font-serif text-cream text-3xl sm:text-5xl font-normal">
+                <div className="font-serif text-cream text-3xl sm:text-5xl font-semibold">
                   {stat.value}
                 </div>
                 <div className="text-cream/40 text-[10px] tracking-[0.25em] uppercase mt-2">
@@ -242,7 +242,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="font-serif text-cream text-3xl sm:text-5xl font-normal leading-[1.15]"
+          className="font-serif text-cream text-3xl sm:text-5xl font-semibold leading-[1.15]"
         >
           {data.headline}
         </motion.h2>
@@ -252,7 +252,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/60 text-sm font-normal mt-5 max-w-md leading-relaxed"
+            className="text-cream/60 text-sm font-medium mt-5 max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -284,7 +284,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           initial="hidden"
           animate={animState}
         >
-          <span className="font-serif text-cream text-4xl sm:text-6xl font-normal tracking-[0.1em]">
+          <span className="font-serif text-cream text-4xl sm:text-6xl font-semibold tracking-[0.1em]">
             TEANIYA
           </span>
         </motion.div>
@@ -302,7 +302,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="text-cream/60 text-sm font-normal mt-6 max-w-sm leading-relaxed"
+          className="text-cream/60 text-sm font-medium mt-6 max-w-sm leading-relaxed"
         >
           {data.description}
         </motion.p>
@@ -347,7 +347,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
         variants={fadeUp}
         initial="hidden"
         animate={animState}
-        className="font-serif text-cream text-3xl sm:text-5xl font-normal leading-[1.15] max-w-lg"
+        className="font-serif text-cream text-3xl sm:text-5xl font-semibold leading-[1.15] max-w-lg"
       >
         {data.headline}
       </motion.h2>
@@ -357,7 +357,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="text-cream/65 text-sm font-normal mt-5 max-w-md leading-relaxed"
+          className="text-cream/65 text-sm font-medium mt-5 max-w-md leading-relaxed"
         >
           {data.description}
         </motion.p>
