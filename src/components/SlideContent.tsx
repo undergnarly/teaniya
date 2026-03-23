@@ -91,7 +91,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="absolute bottom-8 right-0 flex flex-col items-center gap-2 cursor-pointer"
+          className="absolute bottom-0 right-0 flex flex-col items-center gap-2 cursor-pointer"
           onClick={onNext}
         >
           <span className="text-cream/40 text-[10px] tracking-[0.3em] uppercase">Scroll</span>
