@@ -68,6 +68,7 @@ body {
   position: relative;
   height: 100dvh;
   overflow: hidden;
+  padding: 30px;
 }
 
 
