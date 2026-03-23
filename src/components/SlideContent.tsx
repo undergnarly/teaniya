@@ -2,7 +2,18 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import type { SlideData } from "@/data/types";
+import type { SlideData, SlideCTA } from "@/data/types";
+
+function CTALink({ cta, className }: { cta: SlideCTA; className: string }) {
+  if (cta.href.startsWith("http")) {
+    return (
+      <a href={cta.href} target="_blank" rel="noopener noreferrer" className={className}>
+        {cta.label}
+      </a>
+    );
+  }
+  return <Link href={cta.href} className={className}>{cta.label}</Link>;
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -70,9 +81,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           className="flex gap-4 flex-wrap"
         >
           {data.cta && (
-            <Link href={data.cta.href} className="btn-primary">
-              {data.cta.label}
-            </Link>
+            <CTALink cta={data.cta} className="btn-primary" />
           )}
           {data.ctaSecondary && (
             data.ctaSecondary.scrollDown ? (
@@ -183,9 +192,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             initial="hidden"
             animate={animState}
           >
-            <Link href={data.cta.href} className="btn-primary">
-              {data.cta.label}
-            </Link>
+            <CTALink cta={data.cta} className="btn-primary" />
           </motion.div>
         )}
       </div>
@@ -267,9 +274,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             animate={animState}
             className="mt-8"
           >
-            <Link href={data.cta.href} className="btn-outline">
-              {data.cta.label}
-            </Link>
+            <CTALink cta={data.cta} className="btn-outline" />
           </motion.div>
         )}
       </div>
@@ -315,8 +320,8 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           animate={animState}
           className="flex gap-8 mt-10 text-cream/40 text-[11px] tracking-[0.15em] uppercase"
         >
+          <a href="https://t.me/lesxeniya" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Telegram</a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Instagram</a>
-          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">WhatsApp</a>
           <a href="mailto:hello@teaniya.com" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Email</a>
         </motion.div>
         <motion.p
