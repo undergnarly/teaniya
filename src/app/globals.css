@@ -1,0 +1,301 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-cormorant);
+
+  --color-cream: #F5F0E8;
+  --color-cream-dark: #EDE6D8;
+  --color-sand: #E0D5C4;
+  --color-bark: #6B5344;
+  --color-bark-light: #8B7360;
+  --color-charcoal: #2C2A26;
+  --color-charcoal-light: #4A4740;
+  --color-sage: #7A8B69;
+  --color-sage-light: #9AAD8A;
+  --color-forest: #3C4A34;
+  --color-moss: #4A5D3E;
+  --color-clay: #C4956A;
+  --color-clay-light: #D4AD88;
+  --color-matcha: #8EA87A;
+  --color-tea-gold: #C9A96E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.8s ease;
+  overflow-x: hidden;
+}
+
+/* ── Slide system ── */
+.slide-container {
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-wrapper {
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.slide {
+  height: 100dvh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-frame {
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.slide-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 8px solid var(--color-cream);
+  border-radius: 28px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* ── Video background ── */
+.video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.video-bg video,
+.video-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Gradient overlays ── */
+.overlay-dark {
+  background: linear-gradient(
+    to top,
+    rgba(44, 42, 38, 0.85) 0%,
+    rgba(44, 42, 38, 0.4) 35%,
+    rgba(44, 42, 38, 0.15) 60%,
+    transparent 100%
+  );
+}
+
+.overlay-forest {
+  background: linear-gradient(
+    to top,
+    rgba(60, 74, 52, 0.9) 0%,
+    rgba(60, 74, 52, 0.4) 35%,
+    rgba(60, 74, 52, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.overlay-warm {
+  background: linear-gradient(
+    135deg,
+    rgba(107, 83, 68, 0.7) 0%,
+    rgba(60, 74, 52, 0.5) 50%,
+    transparent 100%
+  );
+}
+
+/* ── Decorative ── */
+.tea-steam {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(to top, rgba(255,255,255,0.3), transparent);
+  animation: steam 3s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+@keyframes steam {
+  0% { transform: translateY(0) scaleX(1); opacity: 0; }
+  15% { opacity: 0.6; }
+  50% { transform: translateY(-40px) scaleX(1.5); opacity: 0.3; }
+  100% { transform: translateY(-80px) scaleX(0.5); opacity: 0; }
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage);
+  border-radius: 2px;
+}
+
+/* ── Page transitions ── */
+.page-section {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ── Botanical decoration ── */
+.botanical-line {
+  stroke: var(--color-sage);
+  stroke-width: 1;
+  fill: none;
+  opacity: 0.3;
+}
+
+/* ── Button styles ── */
+.btn-primary {
+  background-color: var(--color-forest);
+  color: var(--color-cream);
+  padding: 14px 36px;
+  border-radius: 100px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-moss);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(60, 74, 52, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-cream);
+  padding: 14px 36px;
+  border-radius: 100px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(245, 240, 232, 0.4);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background: rgba(245, 240, 232, 0.1);
+  border-color: var(--color-cream);
+  transform: translateY(-2px);
+}
+
+/* ── Loading ── */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-cream);
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-bar {
+  width: 120px;
+  height: 1px;
+  background: var(--color-sand);
+  border-radius: 1px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.loading-bar-inner {
+  height: 100%;
+  background: var(--color-forest);
+  border-radius: 1px;
+  animation: loadSlide 1.8s ease-in-out infinite;
+}
+
+@keyframes loadSlide {
+  0% { width: 0; margin-left: 0; }
+  50% { width: 100%; margin-left: 0; }
+  100% { width: 0; margin-left: 100%; }
+}
+
+/* ── Scroll page layout ── */
+.scroll-page {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  min-height: 100dvh;
+}
+
+/* ── App frame for desktop ── */
+@media (min-width: 1024px) {
+  .app-frame {
+    max-width: calc(100dvh * 9 / 16);
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .slide-wrapper {
+    transition: none;
+  }
+
+  .tea-steam {
+    animation: none;
+  }
+
+  video {
+    display: none;
+  }
+}
