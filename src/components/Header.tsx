@@ -32,7 +32,7 @@ export default function Header({ variant = "light" }: HeaderProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         className="fixed z-50 flex items-center justify-between"
-        style={{ top: 30, left: 30, right: 30, padding: "16px 0" }}
+        style={{ left: 30, right: 30, padding: "16px 0" }}
       >
         <Link href="/" className={`${logoColor} no-underline`}>
           <div className="flex flex-col items-start">
