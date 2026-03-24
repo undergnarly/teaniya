@@ -124,6 +124,18 @@ body {
   );
 }
 
+/* ── Slide text readability ── */
+.slide-frame * {
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4), 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.slide-frame button,
+.slide-frame a.btn-primary,
+.slide-frame a.btn-outline,
+.slide-frame li {
+  text-shadow: none;
+}
+
 /* ── Decorative ── */
 .tea-steam {
   position: absolute;

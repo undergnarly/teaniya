@@ -47,7 +47,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/50 text-[11px] tracking-[0.4em] uppercase mb-4 font-sans"
+            className="text-cream/70 text-[11px] tracking-[0.4em] uppercase mb-4 font-sans"
           >
             {data.subtitle}
           </motion.p>
@@ -68,7 +68,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/70 text-sm sm:text-base font-medium max-w-md leading-relaxed"
+            className="text-cream/90 text-sm sm:text-base font-medium max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -105,7 +105,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           className="absolute bottom-0 right-0 flex flex-col items-center gap-2 cursor-pointer"
           onClick={onNext}
         >
-          <span className="text-cream/40 text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+          <span className="text-cream/60 text-[10px] tracking-[0.3em] uppercase">Scroll</span>
           <motion.div
             animate={{ y: [0, 6, 0] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
@@ -140,7 +140,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
               variants={fadeUp}
               initial="hidden"
               animate={animState}
-              className="text-cream/50 text-[11px] tracking-[0.4em] uppercase block mb-4 font-sans"
+              className="text-cream/70 text-[11px] tracking-[0.4em] uppercase block mb-4 font-sans"
             >
               {data.subtitle}
             </motion.span>
@@ -162,7 +162,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/65 text-sm font-medium max-w-md leading-relaxed"
+            className="text-cream/85 text-sm font-medium max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -178,7 +178,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             {data.features.map((f) => (
               <li
                 key={f}
-                className="text-cream/60 text-[11px] tracking-[0.1em] uppercase rounded-full border border-cream/20 px-5 py-2.5"
+                className="text-cream/80 text-[11px] tracking-[0.1em] uppercase rounded-full border border-cream/20 px-5 py-2.5"
               >
                 {f}
               </li>
@@ -213,7 +213,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             <p className="font-serif text-cream text-2xl sm:text-4xl lg:text-5xl font-semibold leading-[1.3] italic">
               &ldquo;{data.quote.text}&rdquo;
             </p>
-            <footer className="mt-6 text-cream/50 text-[12px] tracking-[0.2em] uppercase">
+            <footer className="mt-6 text-cream/70 text-[12px] tracking-[0.2em] uppercase">
               — {data.quote.author}
             </footer>
           </motion.blockquote>
@@ -231,7 +231,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
                 <div className="font-serif text-cream text-3xl sm:text-5xl font-semibold">
                   {stat.value}
                 </div>
-                <div className="text-cream/40 text-[10px] tracking-[0.25em] uppercase mt-2">
+                <div className="text-cream/60 text-[10px] tracking-[0.25em] uppercase mt-2">
                   {stat.label}
                 </div>
               </div>
@@ -261,7 +261,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             variants={fadeUp}
             initial="hidden"
             animate={animState}
-            className="text-cream/60 text-sm font-medium mt-5 max-w-md leading-relaxed"
+            className="text-cream/80 text-sm font-medium mt-5 max-w-md leading-relaxed"
           >
             {data.description}
           </motion.p>
@@ -294,7 +294,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           <span className="font-serif text-cream text-4xl sm:text-6xl font-semibold tracking-[0.1em]">
             TEANIYA
           </span>
-          <p className="text-cream/50 text-[11px] tracking-[0.35em] uppercase mt-3">
+          <p className="text-cream/70 text-[11px] tracking-[0.35em] uppercase mt-3">
             {data.subtitle}
           </p>
         </motion.div>
@@ -303,7 +303,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="text-cream/60 text-sm font-medium max-w-sm leading-relaxed"
+          className="text-cream/80 text-sm font-medium max-w-sm leading-relaxed"
         >
           {data.description}
         </motion.p>
@@ -312,18 +312,18 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="flex gap-8 text-cream/40 text-[11px] tracking-[0.15em] uppercase"
+          className="flex gap-8 text-cream/60 text-[11px] tracking-[0.15em] uppercase"
         >
-          <a href="https://t.me/lesxeniya" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Telegram</a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Instagram</a>
-          <a href="mailto:hello@teaniya.com" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Email</a>
+          <a href="https://t.me/lesxeniya" target="_blank" rel="noopener noreferrer" className="text-cream/60 hover:text-cream/100 transition-colors no-underline">Telegram</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-cream/60 hover:text-cream/100 transition-colors no-underline">Instagram</a>
+          <a href="mailto:hello@teaniya.com" className="text-cream/60 hover:text-cream/100 transition-colors no-underline">Email</a>
         </motion.div>
         <motion.p
           custom={3}
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="text-cream/20 text-[10px] tracking-[0.2em]"
+          className="text-cream/40 text-[10px] tracking-[0.2em]"
         >
           © 2026 Teaniya. All rights reserved.
         </motion.p>
@@ -339,7 +339,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
         variants={fadeUp}
         initial="hidden"
         animate={animState}
-        className="text-cream/50 text-[11px] tracking-[0.4em] uppercase mb-4"
+        className="text-cream/70 text-[11px] tracking-[0.4em] uppercase mb-4"
       >
         {data.subtitle}
       </motion.span>
@@ -358,7 +358,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="text-cream/65 text-sm font-medium mt-5 max-w-md leading-relaxed"
+          className="text-cream/85 text-sm font-medium mt-5 max-w-md leading-relaxed"
         >
           {data.description}
         </motion.p>
