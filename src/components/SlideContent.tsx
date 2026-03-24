@@ -201,7 +201,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
 
   if (data.variant === "hook") {
     return (
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 h-full flex flex-col items-center justify-end text-center">
         {data.quote && (
           <motion.blockquote
             custom={0}
@@ -284,7 +284,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
   // Footer variant
   if (data.variant === "footer") {
     return (
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 h-full flex flex-col items-center justify-end text-center">
         <motion.div
           custom={0}
           variants={fadeUp}
