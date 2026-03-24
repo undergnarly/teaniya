@@ -14,7 +14,7 @@ const fadeIn = {
 
 export default function Footer() {
   return (
-    <footer className="bg-forest text-cream py-20 px-6 sm:px-12">
+    <footer className="bg-forest text-cream" style={{ padding: "80px 30px" }}>
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
@@ -119,9 +119,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="bg-cream/10 text-cream text-sm px-4 py-2.5 rounded-l-full border border-cream/15 border-r-0 outline-none placeholder:text-cream/30 w-full focus:border-cream/30 transition-colors"
+                  className="bg-cream/10 text-cream text-sm px-4 py-2.5 rounded-l-full border border-solid border-cream/15 border-r-0 outline-none placeholder:text-cream/30 w-full focus:border-cream/30 transition-colors"
                 />
-                <button className="bg-cream/15 text-cream text-[11px] tracking-[0.1em] uppercase px-5 py-2.5 rounded-r-full border border-cream/15 border-l-0 hover:bg-cream/25 transition-colors cursor-pointer">
+                <button className="bg-cream/15 text-cream text-[11px] tracking-[0.1em] uppercase px-5 py-2.5 rounded-r-full border border-solid border-cream/15 border-l-0 hover:bg-cream/25 transition-colors cursor-pointer">
                   Join
                 </button>
               </div>
@@ -130,7 +130,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-16 pt-8 border-t border-solid border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-cream/25 text-[11px] tracking-[0.15em]">
             © 2026 Teaniya. All rights reserved.
           </p>
