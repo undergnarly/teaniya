@@ -178,7 +178,8 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
             {data.features.map((f) => (
               <li
                 key={f}
-                className="text-cream/60 text-[11px] tracking-[0.1em] uppercase border border-cream/15 rounded-full px-5 py-2.5"
+                className="text-cream/60 text-[11px] tracking-[0.1em] uppercase rounded-full px-5 py-2.5"
+                  style={{ border: "1px solid rgba(245, 240, 232, 0.15)" }}
               >
                 {f}
               </li>
