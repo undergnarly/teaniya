@@ -10,12 +10,13 @@ interface DotNavProps {
 
 export default function DotNav({ total, active, onDotClick }: DotNavProps) {
   return (
-    <div className="fixed right-4 sm:right-8 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-3">
+    <div className="fixed right-4 sm:right-8 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center">
       {Array.from({ length: total }, (_, i) => (
         <button
           key={i}
           onClick={() => onDotClick(i)}
-          className="w-6 h-6 flex items-center justify-center bg-transparent border-none cursor-pointer group"
+          className="flex items-center justify-center bg-transparent border-none cursor-pointer group"
+          style={{ width: 24, height: 24 }}
           aria-label={`Go to slide ${i + 1}`}
           aria-current={i === active ? "step" : undefined}
         >
