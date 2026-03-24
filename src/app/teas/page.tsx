@@ -80,12 +80,12 @@ export default function TeasPage() {
       <section style={{ padding: "60px 30px 80px" }}>
         <div className="max-w-6xl mx-auto">
           <SectionReveal>
-            <div className="flex flex-wrap gap-2 mb-14 justify-center">
+            <div className="flex flex-wrap justify-center" style={{ gap: 8, marginBottom: 50 }}>
               {categories.map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`text-[12px] tracking-[0.12em] uppercase px-5 py-2 rounded-full border border-solid transition-all duration-300 cursor-pointer ${
+                  className={`text-[12px] tracking-[0.12em] uppercase px-5 py-2 rounded-full border transition-all duration-300 cursor-pointer ${
                     activeCategory === cat.id
                       ? "bg-forest text-cream border-forest"
                       : "bg-transparent text-charcoal/60 border-charcoal/15 hover:border-charcoal/30"
@@ -97,7 +97,7 @@ export default function TeasPage() {
             </div>
           </SectionReveal>
 
-          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: 24 }}>
             <AnimatePresence mode="popLayout">
               {filtered.map((tea) => (
                 <motion.a
@@ -128,9 +128,9 @@ export default function TeasPage() {
                       <p className="text-sage text-[11px] tracking-[0.15em] uppercase mb-3">{tea.origin} · {tea.weight}</p>
                       <p className="text-charcoal-light text-sm font-medium leading-relaxed mb-4">{tea.description}</p>
                       {tea.tags && (
-                        <div className="flex flex-wrap gap-1.5">
+                        <div className="flex flex-wrap" style={{ gap: 6 }}>
                           {tea.tags.map((tag) => (
-                            <span key={tag} className="text-[10px] tracking-[0.1em] uppercase text-bark/70 border border-solid border-bark/15 rounded-full px-3 py-1">
+                            <span key={tag} className="text-[10px] tracking-[0.1em] uppercase text-bark/70 rounded-full border border-bark/15 px-3 py-1">
                               {tag}
                             </span>
                           ))}

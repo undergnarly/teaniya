@@ -2,6 +2,7 @@
 
 @theme {
   --spacing: 4px;
+  --default-border-style: solid;
   --font-sans: var(--font-dm-sans);
   --font-serif: var(--font-cormorant);
 
@@ -26,7 +27,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --tw-border-style: solid;
 }
 
 html {

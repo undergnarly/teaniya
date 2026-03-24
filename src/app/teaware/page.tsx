@@ -82,7 +82,7 @@ export default function TeawarePage() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`text-[12px] tracking-[0.12em] uppercase px-5 py-2 rounded-full border border-solid transition-all duration-300 cursor-pointer ${
+                  className={`text-[12px] tracking-[0.12em] uppercase px-5 py-2 rounded-full border transition-all duration-300 cursor-pointer ${
                     activeCategory === cat.id
                       ? "bg-forest text-cream border-forest"
                       : "bg-transparent text-charcoal/60 border-charcoal/15 hover:border-charcoal/30"
