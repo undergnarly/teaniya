@@ -77,10 +77,10 @@ export default function TeasPage() {
       </section>
 
       {/* Filter + Grid */}
-      <section style={{ padding: "60px 30px 80px" }}>
+      <section className="py-16 sm:py-24 px-8" style={{ padding: "60px 30px 80px" }}>
         <div className="max-w-6xl mx-auto">
           <SectionReveal>
-            <div className="flex flex-wrap justify-center" style={{ gap: 8, marginBottom: 50 }}>
+            <div className="flex flex-wrap gap-2 mb-14 justify-center">
               {categories.map((cat) => (
                 <button
                   key={cat.id}
@@ -97,7 +97,7 @@ export default function TeasPage() {
             </div>
           </SectionReveal>
 
-          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: 24 }}>
+          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout">
               {filtered.map((tea) => (
                 <motion.a
@@ -128,7 +128,7 @@ export default function TeasPage() {
                       <p className="text-sage text-[11px] tracking-[0.15em] uppercase mb-3">{tea.origin} · {tea.weight}</p>
                       <p className="text-charcoal-light text-sm font-medium leading-relaxed mb-4">{tea.description}</p>
                       {tea.tags && (
-                        <div className="flex flex-wrap" style={{ gap: 6 }}>
+                        <div className="flex flex-wrap gap-1.5">
                           {tea.tags.map((tag) => (
                             <span key={tag} className="text-[10px] tracking-[0.1em] uppercase text-bark/70 rounded-full border border-bark/15 px-3 py-1">
                               {tag}
