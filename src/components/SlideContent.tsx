@@ -284,7 +284,7 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
   // Footer variant
   if (data.variant === "footer") {
     return (
-      <div className="relative z-10 h-full flex flex-col items-center justify-end text-center">
+      <div className="relative z-10 h-full flex flex-col items-center justify-end text-center" style={{ gap: 16 }}>
         <motion.div
           custom={0}
           variants={fadeUp}
@@ -294,42 +294,36 @@ export default function SlideContent({ data, active, onNext }: SlideContentProps
           <span className="font-serif text-cream text-4xl sm:text-6xl font-semibold tracking-[0.1em]">
             TEANIYA
           </span>
+          <p className="text-cream/50 text-[11px] tracking-[0.35em] uppercase mt-3">
+            {data.subtitle}
+          </p>
         </motion.div>
         <motion.p
           custom={1}
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="text-cream/50 text-[11px] tracking-[0.35em] uppercase mt-4"
-        >
-          {data.subtitle}
-        </motion.p>
-        <motion.p
-          custom={2}
-          variants={fadeUp}
-          initial="hidden"
-          animate={animState}
-          className="text-cream/60 text-sm font-medium mt-6 max-w-sm leading-relaxed"
+          className="text-cream/60 text-sm font-medium max-w-sm leading-relaxed"
         >
           {data.description}
         </motion.p>
         <motion.div
-          custom={3}
+          custom={2}
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="flex gap-8 mt-10 text-cream/40 text-[11px] tracking-[0.15em] uppercase"
+          className="flex gap-8 text-cream/40 text-[11px] tracking-[0.15em] uppercase"
         >
           <a href="https://t.me/lesxeniya" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Telegram</a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Instagram</a>
           <a href="mailto:hello@teaniya.com" className="text-cream/40 hover:text-cream/80 transition-colors no-underline">Email</a>
         </motion.div>
         <motion.p
-          custom={4}
+          custom={3}
           variants={fadeUp}
           initial="hidden"
           animate={animState}
-          className="absolute bottom-6 text-cream/20 text-[10px] tracking-[0.2em]"
+          className="text-cream/20 text-[10px] tracking-[0.2em]"
         >
           © 2026 Teaniya. All rights reserved.
         </motion.p>
