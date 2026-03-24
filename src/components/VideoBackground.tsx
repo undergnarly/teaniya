@@ -18,7 +18,7 @@ export default function VideoBackground({
   overlayStyle = "dark",
 }: VideoBackgroundProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(!!video);
 
   useEffect(() => {
     if (active && !mounted) setMounted(true);
@@ -29,7 +29,6 @@ export default function VideoBackground({
     if (!v) return;
 
     if (active) {
-      v.currentTime = 0;
       v.play().catch(() => {});
       const watchdog = setInterval(() => {
         if (v.paused && active) v.play().catch(() => {});
@@ -38,7 +37,7 @@ export default function VideoBackground({
     } else {
       v.pause();
     }
-  }, [active]);
+  }, [active, mounted]);
 
   // Fire onReady immediately if no video, or wait for canplay/timeout
   useEffect(() => {
