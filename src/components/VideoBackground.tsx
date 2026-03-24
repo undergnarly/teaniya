@@ -40,9 +40,17 @@ export default function VideoBackground({
     }
   }, [active]);
 
+  // Fire onReady immediately if no video, or wait for canplay/timeout
   useEffect(() => {
+    if (!onReady) return;
+
+    if (!video) {
+      onReady();
+      return;
+    }
+
     const v = videoRef.current;
-    if (!v || !onReady) return;
+    if (!v) return;
 
     const handle = () => onReady();
     v.addEventListener("canplay", handle, { once: true });
@@ -52,7 +60,7 @@ export default function VideoBackground({
       v.removeEventListener("canplay", handle);
       clearTimeout(fallback);
     };
-  }, [mounted, onReady]);
+  }, [mounted, onReady, video]);
 
   const overlayClass =
     overlayStyle === "forest"
